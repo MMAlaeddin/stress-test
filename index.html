@@ -15,27 +15,40 @@
     <form>
       <div class="form-group">
         <p>Do you experience any of the following cognitive symptoms of stress? Check all that apply.</p>
-        <input type="checkbox" name="warning" value="loss of sleep">Loss of sleep<br>
-        <input type="checkbox" name="warning" value="appetite">Reduced appetite<br>
-        <input type="checkbox" name="warning" value="thoughts">Racing thoughts<br>
-        <input type="checkbox" name="warning" value="focus">Inability to focus<br>
+        <input type="checkbox" name="cognitive" value="loss of sleep">Loss of sleep<br>
+        <input type="checkbox" name="cognitive" value="appetite">Reduced appetite<br>
+        <input type="checkbox" name="cognitive" value="thoughts">Racing thoughts<br>
+        <input type="checkbox" name="cognitive" value="focus">Inability to focus<br>
       </div>
       <div class="form-group">
         <p>Have you experienced any of the following medical symptoms? Check all that apply.</p>
-        <input type="checkbox" name="warning" value="anxiety">Anxiety<br>
-        <input type="checkbox" name="warning" value="high blood pressure">High blood pressure<br>
-        <input type="checkbox" name="warning" value="chest pain">Chest pain<br>
-        <input type="checkbox" name="warning" value="sickness">Frequent colds/sickness<br>
-        <input type="checkbox" name="warning" value="nervousness">Nervousness, sweaty palms<br>
+        <input type="checkbox" name="physical" value="anxiety">Anxiety<br>
+        <input type="checkbox" name="physical" value="high blood pressure">High blood pressure<br>
+        <input type="checkbox" name="physical" value="chest pain">Chest pain<br>
+        <input type="checkbox" name="physical" value="sickness">Frequent colds/sickness<br>
+        <input type="checkbox" name="physical" value="nervousness">Nervousness, sweaty palms<br>
       </div>
       <div class="form-group">
         <p>Do you experience any of the following emotional symptoms of stress? Check all that apply.</p>
-        <input type="checkbox" name="warning" value="frustrated">Easily frustrated<br>
-        <input type="checkbox" name="warning" value="overwhelmed">Feeling overwhelmed<br>
-        <input type="checkbox" name="warning" value="relaxing">Difficulty relaxing<br>
-        <input type="checkbox" name="warning" value="avoiding">Avoiding others<br>
+        <input type="checkbox" name="emotional" value="frustrated">Easily frustrated<br>
+        <input type="checkbox" name="emotional" value="overwhelmed">Feeling overwhelmed<br>
+        <input type="checkbox" name="emotional" value="relaxing">Difficulty relaxing<br>
+        <input type="checkbox" name="emotional" value="avoiding">Avoiding others<br>
       </div>
+      <div class="form-group">
+        <p>How do you cope with stress? (leave blank if none apply)</p>
+        <input type="checkbox" name="coping" value="exercise">Exercise<br>
+        <input type="checkbox" name="coping" value="meditate">Meditating<br>
+        <input type="checkbox" name="coping" value="eating">Eating (ice cream)<br>
+        <input type="checkbox" name="coping" value="pets">Hanging out with my pet(s)<br>
+      </div>
+      <button type="submit" class="btn-warning">Submit!</button>
     </form>
+
+    <div id="hidden">
+      
+    </div>
+
   </div>
 </body>
 </html>
