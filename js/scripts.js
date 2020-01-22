@@ -9,20 +9,28 @@ $(document).ready(function() {
     var warningSigns = [];
     var copingMechanisms = [];
 
-    $("input:checkbox[name=cognitive]:checked").each(function() {
-      var cognitiveSign = $(this).val();
-      warningSigns.push(cognitiveSign);
-    });
+    // $("input:checkbox[name=cognitive]:checked").each(function() {
+    //   var cognitiveSign = $(this).val();
+    //   warningSigns.push(cognitiveSign);
+    // });
 
-    $("input:checkbox[name=physical]:checked").each(function() {
-      var physicalSign = $(this).val();
-      warningSigns.push(physicalSign);
-    });
+    // $("input:checkbox[name=physical]:checked").each(function() {
+    //   var physicalSign = $(this).val();
+    //   warningSigns.push(physicalSign);
+    // });
 
-    $("input:checkbox[name=emotional]:checked").each(function() {
-      var emotionalSign = $(this).val();
-      warningSigns.push(emotionalSign);
-    });
+    // $("input:checkbox[name=emotional]:checked").each(function() {
+    //   var emotionalSign = $(this).val();
+    //   warningSigns.push(emotionalSign);
+    // });
+
+    var blanks = ["cognitive", "physical", "emotional"];
+    for (i=0; i<blanks.length; i++) {
+      $("input:checkbox[name=" + blanks[i] + "]:checked").each(function() {
+        var warningSign = $(this).val();
+        warningSigns.push(warningSign);
+      })
+    }
 
     $("input:checkbox[name=coping]:checked").each(function() {
       var copingMechanism = $(this).val();
